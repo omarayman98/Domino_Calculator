@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFEC7"
+    tools:context=".draw_single_activity">
+
+    <TextView
+        android:id="@+id/textView_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Player 1"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <TextView
+        android:id="@+id/current_scorep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Score : "
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:fontFamily="@font/acme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <ImageView
+        android:id="@+id/imageView_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnDraw_2Players"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_history_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241"
+        app:layout_constraintWidth_percent=".6">
+
+        <EditText
+            android:id="@+id/WonValue_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/edittext_background"
+            android:drawableLeft="@drawable/ic_baseline_arrow_upward_24"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:ems="10"
+            android:hint="  Won Value"
+            android:inputType="number"
+            android:padding="13dp"
+            android:fontFamily="@font/abel"
+            />
+
+        <Button
+            android:id="@+id/add_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:fontFamily="@font/abel"
+            android:onClick="OnDraw_2Players"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/redo_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_redo_black_24dp"
+        android:text="Redo"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:background="@drawable/round_button_green"
+        android:onClick="OnDraw_2Players"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <Button
+        android:id="@+id/undo_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_undo_black_24dp"
+        android:text="Undo"
+        android:background="@drawable/round_button_red"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:onClick="OnDraw_2Players"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="8dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/EndRound_f1vs1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/round_button_gold"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/textView_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Player 2"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569" />
+
+    <TextView
+        android:id="@+id/current_scorep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Score : "
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:fontFamily="@font/acme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626" />
+
+    <ImageView
+        android:id="@+id/imageView_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnDraw_2Players"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544"
+        app:srcCompat="@drawable/ic_history_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.746">
+
+        <EditText
+            android:id="@+id/WonValue_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abel"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/edittext_background"
+            android:drawableLeft="@drawable/ic_baseline_arrow_upward_24"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:ems="10"
+            android:hint="  Won Value"
+            android:inputType="number"
+            android:padding="13dp" />
+
+        <Button
+            android:id="@+id/add_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:onClick="OnDraw_2Players"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:fontFamily="@font/abel"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/redo_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_redo_black_24dp"
+        android:onClick="OnDraw_2Players"
+        android:text="Redo"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:background="@drawable/round_button_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <Button
+        android:id="@+id/undo_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_undo_black_24dp"
+        android:text="Undo"
+        android:background="@drawable/round_button_red"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:onClick="OnDraw_2Players"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
