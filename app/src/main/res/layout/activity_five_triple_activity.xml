@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFECF"
+    tools:context=".five_triple_activity">
+
+
+    <TextView
+        android:id="@+id/textView_ff1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Player 1"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+    <TextView
+        android:id="@+id/current_score_ffp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Score : "
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:fontFamily="@font/acme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <ImageView
+        android:id="@+id/imageView_ffp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAllFives_3Players"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_history_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999">
+
+        <Button
+            android:id="@+id/add1_ffp1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:shadowRadius="45"
+            android:onClick="OnAllFives_3Players"
+            android:text="+1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+
+        <Button
+            android:id="@+id/add2_ffp1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:text="+2"
+            android:textSize="20dp"
+            android:onClick="OnAllFives_3Players"
+            android:shadowRadius="45"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.81"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+
+        <Button
+            android:id="@+id/add3_ffp1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:onClick="OnAllFives_3Players"
+            android:text="+3"
+            android:shadowRadius="45"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.67"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+
+        <Button
+            android:id="@+id/add4_ffp1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:shadowRadius="45"
+            android:onClick="OnAllFives_3Players"
+            android:text="+4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add5_ffp1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="OnAllFives_3Players"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:text="+5"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add6_ffp1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:onClick="OnAllFives_3Players"
+            android:text="+6"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add7_ffp1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:onClick="OnAllFives_3Players"
+            android:text="+7"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21">
+    <EditText
+        android:id="@+id/DownValue_ffp1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_baseline_arrow_downward_24"
+        android:drawablePadding="10dp"
+        android:elevation="2dp"
+        android:ems="10"
+        android:hint="Down Value"
+        android:inputType="number"
+        android:padding="13dp"
+        android:fontFamily="@font/abel"
+        />
+    <Button
+        android:id="@+id/DownValue2_ffp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAllFives_3Players"
+        android:background="@drawable/round_button"
+        android:text="Down"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:fontFamily="@font/abel"
+        />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/redo_ffp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_redo_black_24dp"
+        android:text="Redo"
+        android:background="@drawable/round_button_green"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:onClick="OnAllFives_3Players"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+    <Button
+        android:id="@+id/undo_ffp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_red"
+        android:drawableRight="@drawable/ic_undo_black_24dp"
+        android:onClick="OnAllFives_3Players"
+        android:text="Undo"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/textView_ff2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/aclonica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+    <TextView
+        android:id="@+id/current_score_ffp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Score : "
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:fontFamily="@font/acme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+    <ImageView
+        android:id="@+id/imageView_ffp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAllFives_3Players"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38"
+        app:srcCompat="@drawable/ic_history_black_24dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49">
+
+        <Button
+            android:id="@+id/add1_ffp2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="OnAllFives_3Players"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:text="+1"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.49" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add2_ffp2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="OnAllFives_3Players"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:text="+2"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.81"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.49" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add3_ffp2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="OnAllFives_3Players"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:text="+3"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.67"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.49" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add4_ffp2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:onClick="OnAllFives_3Players"
+            android:text="+4"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.49" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add5_ffp2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:onClick="OnAllFives_3Players"
+            android:text="+5"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.49" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add6_ffp2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:onClick="OnAllFives_3Players"
+            android:text="+6"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.49" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add7_ffp2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="OnAllFives_3Players"
+            android:background="@drawable/round_button"
+            android:shadowColor="#5E5E5E"
+            android:textColor="#fff"
+            android:text="+7"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.49" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57">
+    <EditText
+        android:id="@+id/DownValue_ffp2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_baseline_arrow_downward_24"
+        android:drawablePadding="10dp"
+        android:elevation="2dp"
+        android:ems="10"
+        android:hint="Down Value"
+        android:inputType="number"
+        android:padding="13dp"
+        android:fontFamily="@font/abel" />
+    <Button
+        android:id="@+id/DownValue2_ffp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAllFives_3Players"
+        android:background="@drawable/round_button"
+        android:text="Down"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:fontFamily="@font/abel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/redo_ffp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_green"
+        android:drawableLeft="@drawable/ic_redo_black_24dp"
+        android:onClick="OnAllFives_3Players"
+        android:text="Redo"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+    <Button
+        android:id="@+id/undo_ffp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_red"
+        android:drawableRight="@drawable/ic_undo_black_24dp"
+        android:onClick="OnAllFives_3Players"
+        android:text="Undo"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="8dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <TextView
+        android:id="@+id/textView_ff3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 3"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/aclonica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+    <TextView
+        android:id="@+id/current_score_ffp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Score : "
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:fontFamily="@font/acme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+    <ImageView
+        android:id="@+id/imageView_ffp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAllFives_3Players"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73"
+        app:srcCompat="@drawable/ic_history_black_24dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838">
+
+        <Button
+            android:id="@+id/add1_ffp3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:onClick="OnAllFives_3Players"
+            android:shadowColor="#5E5E5E"
+            android:text="+1"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add2_ffp3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:onClick="OnAllFives_3Players"
+            android:shadowColor="#5E5E5E"
+            android:text="+2"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.81"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add3_ffp3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:onClick="OnAllFives_3Players"
+            android:shadowColor="#5E5E5E"
+            android:text="+3"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.67"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add4_ffp3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:onClick="OnAllFives_3Players"
+            android:shadowColor="#5E5E5E"
+            android:text="+4"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add5_ffp3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:onClick="OnAllFives_3Players"
+            android:shadowColor="#5E5E5E"
+            android:text="+5"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add6_ffp3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:onClick="OnAllFives_3Players"
+            android:shadowColor="#5E5E5E"
+            android:text="+6"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/add7_ffp3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:onClick="OnAllFives_3Players"
+            android:shadowColor="#5E5E5E"
+            android:text="+7"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91">
+        <EditText
+            android:id="@+id/DownValue_ffp3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/edittext_background"
+            android:drawableLeft="@drawable/ic_baseline_arrow_downward_24"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:ems="10"
+            android:hint="Down Value"
+            android:inputType="number"
+            android:padding="13dp"
+            android:fontFamily="@font/abel"/>
+
+        <Button
+            android:id="@+id/DownValue2_ffp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnAllFives_3Players"
+            android:background="@drawable/round_button"
+            android:text="Down"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:fontFamily="@font/abel"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/redo_ffp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_redo_black_24dp"
+        android:onClick="OnAllFives_3Players"
+        android:text="Redo"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:background="@drawable/round_button_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".99" />
+    <Button
+        android:id="@+id/undo_ffp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_undo_black_24dp"
+        android:onClick="OnAllFives_3Players"
+        android:text="Undo"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:background="@drawable/round_button_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99" />
+    <Button
+        android:id="@+id/EndRound_3players"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button_gold"
+        android:onClick="OnAllFives_3Players"
+        android:padding="5dp"
+        android:text="end \nround"
+        android:textColor="#000000"
+        android:fontFamily="@font/acme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
