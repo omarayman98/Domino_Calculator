@@ -12,7 +12,7 @@
         android:id="@+id/textView_fp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Player 1"
+        android:text="@string/player_1"
         android:textColor="#000000"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -28,7 +28,7 @@
         android:id="@+id/current_score_fp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Current Score : "
+        android:text="@string/current_score"
         android:textColor="#000000"
         android:textSize="30dp"
         android:fontFamily="@font/acme"
@@ -50,7 +50,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_history_black_24dp" />
+        app:srcCompat="@drawable/ic_history_black_24dp"
+        android:contentDescription="@string/todo" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,27 +74,25 @@
             android:textColor="#fff"
             android:textSize="20dp"
             android:shadowRadius="45"
-            android:text="+1"
+            android:text="@string/_1"
             android:onClick="OnAllFives_2Players"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.955"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.21" />
-
-        <EditText
-            android:layout_width="5dp"
-            android:layout_height="50dp" />
+            app:layout_constraintVertical_bias="0.21"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/add2_fp1"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginStart="5dp"
             android:background="@drawable/round_button"
             android:onClick="OnAllFives_2Players"
             android:shadowRadius="45"
-            android:text="+2"
+            android:text="@string/_2"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -101,20 +100,18 @@
             app:layout_constraintHorizontal_bias="0.81"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.21" />
-
-        <EditText
-            android:layout_width="5dp"
-            android:layout_height="50dp" />
+            app:layout_constraintVertical_bias="0.21"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/add3_fp1"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginStart="5dp"
             android:background="@drawable/round_button"
             android:onClick="OnAllFives_2Players"
             android:shadowRadius="45"
-            android:text="+3"
+            android:text="@string/_3"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -124,18 +121,15 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.21" />
 
-        <EditText
-            android:layout_width="5dp"
-            android:layout_height="50dp" />
-
         <Button
             android:id="@+id/add4_fp1"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginStart="5dp"
             android:background="@drawable/round_button"
             android:onClick="OnAllFives_2Players"
             android:shadowRadius="45"
-            android:text="+4"
+            android:text="@string/_4"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -143,20 +137,19 @@
             app:layout_constraintHorizontal_bias="0.53"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.21" />
+            app:layout_constraintVertical_bias="0.21"
+            style="?android:attr/buttonBarButtonStyle" />
 
-        <EditText
-            android:layout_width="5dp"
-            android:layout_height="50dp" />
 
         <Button
             android:id="@+id/add5_fp1"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginStart="5dp"
             android:background="@drawable/round_button"
             android:onClick="OnAllFives_2Players"
             android:shadowRadius="45"
-            android:text="+5"
+            android:text="@string/_5"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -164,20 +157,18 @@
             app:layout_constraintHorizontal_bias="0.38"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.21" />
-
-        <EditText
-            android:layout_width="5dp"
-            android:layout_height="50dp" />
+            app:layout_constraintVertical_bias="0.21"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/add6_fp1"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginStart="5dp"
             android:background="@drawable/round_button"
             android:onClick="OnAllFives_2Players"
             android:shadowRadius="45"
-            android:text="+6"
+            android:text="@string/_6"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -185,20 +176,18 @@
             app:layout_constraintHorizontal_bias="0.22"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.21" />
-
-        <EditText
-            android:layout_width="5dp"
-            android:layout_height="50dp" />
+            app:layout_constraintVertical_bias="0.21"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/add7_fp1"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/round_button"
+            android:layout_marginStart="5dp"
             android:onClick="OnAllFives_2Players"
             android:shadowRadius="45"
-            android:text="+7"
+            android:text="@string/_7"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -206,7 +195,8 @@
             app:layout_constraintHorizontal_bias="0.08"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.21" />
+            app:layout_constraintVertical_bias="0.21"
+            style="?android:attr/buttonBarButtonStyle" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -223,26 +213,26 @@
         <EditText
             android:id="@+id/DownValue_fp1"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abel"
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
             android:background="@drawable/edittext_background"
-            android:drawableLeft="@drawable/ic_baseline_arrow_downward_24"
+            android:drawableStart="@drawable/ic_baseline_arrow_downward_24"
             android:drawablePadding="10dp"
             android:elevation="2dp"
             android:ems="10"
-            android:hint="Down Value"
+            android:hint="@string/down_value"
             android:inputType="number"
             android:padding="13dp"
-            android:fontFamily="@font/abel"
-            />
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/DownValue2_fp1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_button"
-            android:text="Down"
+            android:text="@string/down"
             android:textColor="#fff"
             android:textAllCaps="false"
             android:textSize="20dp"
@@ -257,13 +247,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_button_green"
-        android:drawableLeft="@drawable/ic_redo_black_24dp"
+        android:drawableStart="@drawable/ic_redo_black_24dp"
         android:onClick="OnAllFives_2Players"
         android:fontFamily="monospace"
         android:padding="10dp"
         android:textAllCaps="false"
         android:textColor="#FFF"
-        android:text="Redo"
+        android:text="@string/redo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.749"
@@ -276,13 +266,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_button_red"
-        android:drawableRight="@drawable/ic_undo_black_24dp"
+        android:drawableEnd="@drawable/ic_undo_black_24dp"
         android:onClick="OnAllFives_2Players"
         android:fontFamily="monospace"
         android:padding="10dp"
         android:textAllCaps="false"
         android:textColor="#FFF"
-        android:text="Undo"
+        android:text="@string/undo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
@@ -304,7 +294,7 @@
         android:id="@+id/textView_fp2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Player 2"
+        android:text="@string/player_2"
         android:textColor="#000000"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -320,7 +310,7 @@
         android:id="@+id/current_score_fp2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Current Score : "
+        android:text="@string/current_score"
         android:textColor="#000000"
         android:textSize="30dp"
         android:fontFamily="@font/acme"
@@ -342,7 +332,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.539999"
-        app:srcCompat="@drawable/ic_history_black_24dp" />
+        app:srcCompat="@drawable/ic_history_black_24dp"
+        android:contentDescription="@string/todo" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -362,7 +353,7 @@
             android:layout_height="50dp"
             android:background="@drawable/round_button"
             android:onClick="OnAllFives_2Players"
-            android:text="+1"
+            android:text="@string/_1"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -370,19 +361,17 @@
             app:layout_constraintHorizontal_bias="0.955"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.71" />
-
-        <EditText
-            android:layout_width="5dp"
-            android:layout_height="50dp" />
+            app:layout_constraintVertical_bias="0.71"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/add2_fp2"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginStart="5dp"
             android:background="@drawable/round_button"
             android:onClick="OnAllFives_2Players"
-            android:text="+2"
+            android:text="@string/_2"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -390,20 +379,18 @@
             app:layout_constraintHorizontal_bias="0.81"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.71" />
-
-        <EditText
-            android:layout_width="5dp"
-            android:layout_height="50dp" />
+            app:layout_constraintVertical_bias="0.71"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/add3_fp2"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginStart="5dp"
             android:background="@drawable/round_button"
             android:onClick="OnAllFives_2Players"
             android:shadowRadius="45"
-            android:text="+3"
+            android:text="@string/_3"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -411,19 +398,17 @@
             app:layout_constraintHorizontal_bias="0.67"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.71" />
-
-        <EditText
-            android:layout_width="5dp"
-            android:layout_height="50dp" />
+            app:layout_constraintVertical_bias="0.71"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/add4_fp2"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginStart="5dp"
             android:background="@drawable/round_button"
             android:onClick="OnAllFives_2Players"
-            android:text="+4"
+            android:text="@string/_4"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -431,19 +416,17 @@
             app:layout_constraintHorizontal_bias="0.53"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.71" />
-
-        <EditText
-            android:layout_width="5dp"
-            android:layout_height="50dp" />
+            app:layout_constraintVertical_bias="0.71"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/add5_fp2"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginStart="5dp"
             android:background="@drawable/round_button"
             android:onClick="OnAllFives_2Players"
-            android:text="+5"
+            android:text="@string/_5"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -451,19 +434,17 @@
             app:layout_constraintHorizontal_bias="0.38"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.71" />
-
-        <EditText
-            android:layout_width="5dp"
-            android:layout_height="50dp" />
+            app:layout_constraintVertical_bias="0.71"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/add6_fp2"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginStart="5dp"
             android:background="@drawable/round_button"
             android:onClick="OnAllFives_2Players"
-            android:text="+6"
+            android:text="@string/_6"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -471,19 +452,17 @@
             app:layout_constraintHorizontal_bias="0.22"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.71" />
-
-        <EditText
-            android:layout_width="5dp"
-            android:layout_height="50dp" />
+            app:layout_constraintVertical_bias="0.71"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/add7_fp2"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/round_button"
+            android:layout_marginStart="5dp"
             android:onClick="OnAllFives_2Players"
-            android:text="+7"
+            android:text="@string/_7"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -491,7 +470,8 @@
             app:layout_constraintHorizontal_bias="0.08"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.71" />
+            app:layout_constraintVertical_bias="0.71"
+            style="?android:attr/buttonBarButtonStyle" />
 
     </LinearLayout>
     <LinearLayout
@@ -508,26 +488,26 @@
         <EditText
             android:id="@+id/DownValue_fp2"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abel"
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
             android:background="@drawable/edittext_background"
-            android:drawableLeft="@drawable/ic_baseline_arrow_downward_24"
+            android:drawableStart="@drawable/ic_baseline_arrow_downward_24"
             android:drawablePadding="10dp"
             android:elevation="2dp"
             android:ems="10"
-            android:hint="Down Value"
+            android:hint="@string/down_value"
             android:inputType="number"
             android:padding="13dp"
-            android:fontFamily="@font/abel"
-            />
+            android:importantForAutofill="no" />
         <Button
             android:id="@+id/DownValue2_fp2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_button"
             android:onClick="OnAllFives_2Players"
-            android:text="Down"
+            android:text="@string/down"
             android:textColor="#fff"
             android:textAllCaps="false"
             android:textSize="20dp"
@@ -549,11 +529,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_button_green"
-        android:drawableLeft="@drawable/ic_redo_black_24dp"
+        android:drawableStart="@drawable/ic_redo_black_24dp"
         android:fontFamily="monospace"
         android:onClick="OnAllFives_2Players"
         android:padding="10dp"
-        android:text="Redo"
+        android:text="@string/redo"
         android:textAllCaps="false"
         android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -568,11 +548,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_button_red"
-        android:drawableRight="@drawable/ic_undo_black_24dp"
+        android:drawableEnd="@drawable/ic_undo_black_24dp"
         android:fontFamily="monospace"
         android:onClick="OnAllFives_2Players"
         android:padding="10dp"
-        android:text="Undo"
+        android:text="@string/undo"
         android:textAllCaps="false"
         android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -589,7 +569,7 @@
         android:background="@drawable/round_button_gold"
         android:onClick="OnAllFives_2Players"
         android:padding="5dp"
-        android:text="end \nround"
+        android:text="@string/end_round"
         android:textColor="#000000"
         android:fontFamily="@font/acme"
         app:layout_constraintBottom_toBottomOf="parent"

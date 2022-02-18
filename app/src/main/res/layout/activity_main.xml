@@ -7,34 +7,32 @@
     android:background="#D3D1A9"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp">
 
 
     <TextView
         android:id="@+id/draw_info"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:drawableRight="@drawable/ic_baseline_info_24"
+        android:drawableEnd="@drawable/ic_baseline_info_24"
         android:fontFamily="@font/aclonica"
         android:gravity="center"
         android:onClick="ToPerfectActivity"
-        android:text="Draw Domino  "
+        android:text="@string/draw_domino"
         android:textColor="#000"
         android:textSize="30dp"
 
         />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_view_gold">
 
-        <TextView
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:gravity="center"/>
-
         <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginStart="30dp"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="@drawable/player1vs1"
@@ -45,7 +43,7 @@
             android:layout_height="match_parent"
             android:id="@+id/draw_single"
             android:onClick="ToPerfectActivity"
-            android:text="Play Draw Domino 1vs1"
+            android:text="@string/play_draw_domino_1vs1"
             android:textSize="20dp"
             android:fontFamily="@font/acme"
             android:textColor="#000"
@@ -56,17 +54,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="5dp"/>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_view_gold">
 
-        <TextView
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:gravity="center"/>
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginStart="30dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -78,7 +73,7 @@
             android:onClick="ToPerfectActivity"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Play Draw Domino 2vs2"
+            android:text="@string/play_draw_domino_2vs2"
             android:textColor="#000"
             android:textSize="20dp"
             android:fontFamily="@font/acme"
@@ -89,17 +84,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="5dp"/>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_view_gold">
 
-        <TextView
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:gravity="center"/>
+
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginStart="30dp"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="@drawable/players3"
@@ -110,7 +103,7 @@
             android:onClick="ToPerfectActivity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Play Fives Domino 3 Players"
+            android:text="@string/play_fives_domino_3_players"
             android:textSize="20dp"
             android:textColor="#000"
             android:textStyle="italic"
@@ -131,27 +124,25 @@
         android:id="@+id/five_info"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:drawableRight="@drawable/ic_baseline_info_24"
+        android:drawableEnd="@drawable/ic_baseline_info_24"
         android:fontFamily="@font/aclonica"
         android:gravity="center"
         android:onClick="ToPerfectActivity"
-        android:text="All-Fives Domino  "
+        android:text="@string/all_fives_domino"
         android:textColor="#000"
         android:textSize="30dp"
          />
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_view_gold">
 
-        <TextView
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:gravity="center"/>
+
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:layout_marginStart="30dp"
             android:background="@drawable/player1vs1"
             />
 
@@ -160,7 +151,7 @@
             android:layout_height="match_parent"
             android:id="@+id/five_single"
             android:onClick="ToPerfectActivity"
-            android:text="Play All-Fives Domino 1vs1"
+            android:text="@string/play_all_fives_domino_1vs1"
             android:textSize="20dp"
             android:fontFamily="@font/acme"
             android:textColor="#000"
@@ -171,18 +162,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="5dp"/>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_view_gold">
 
-        <TextView
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:gravity="center"/>
+
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="50dp"
+            android:layout_marginStart="30dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:background="@drawable/teams2"
@@ -193,7 +182,7 @@
             android:onClick="ToPerfectActivity"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Play All-Fives Domino 2vs2"
+            android:text="@string/play_all_fives_domino_2vs2"
             android:textColor="#000"
             android:textSize="20dp"
             android:textStyle="italic"
@@ -204,19 +193,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="5dp"/>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_view_gold">
 
-        <TextView
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:gravity="center"/>
-
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:layout_marginStart="30dp"
             android:background="@drawable/players3"
             />
 
@@ -225,7 +210,7 @@
             android:onClick="ToPerfectActivity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Play All-Five Domino 3 Players"
+            android:text="@string/play_all_five_domino_3_players"
             android:textSize="20dp"
             android:textColor="#000"
             android:textStyle="italic"
@@ -251,7 +236,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-smallcaps"
-            android:text="  By: "
+            android:text="@string/by"
             android:textColor="#00039A"
             android:textSize="18dp"
             tools:ignore="InvalidId" />
@@ -261,7 +246,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-smallcaps"
-            android:text="Omar Ayman"
+            android:text="@string/omar_ayman"
             android:onClick="ToPerfectActivity"
             android:textColor="#00039A"
             android:textSize="18dp"

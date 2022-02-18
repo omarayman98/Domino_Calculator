@@ -23,7 +23,7 @@ public class draw_single_activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_draw_single_activity);
+        setContentView(R.layout.activity_draw_single);
 
 
 

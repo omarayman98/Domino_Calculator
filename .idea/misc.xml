@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android-Java-Projects/Domino Calculator/app/src/main/res/layout/activity_draw_single_activity.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android-Java-Projects/Domino Calculator/app/src/main/res/layout/activity_draw_triple_activity.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android-Java-Projects/Domino Calculator/app/src/main/res/layout/activity_five_single.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android-Java-Projects/Domino Calculator/app/src/main/res/layout/activity_five_triple_activity.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android-Java-Projects/Domino Calculator/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android-Java-Projects/Done Apps/Domino Calculator/app/src/main/res/layout/activity_draw_single_activity.xml" value="0.27291666666666664" />
         <entry key="..\:/Android-Java-Projects/Done Apps/Domino Calculator/app/src/main/res/layout/activity_five_triple_activity.xml" value="0.27291666666666664" />
       </map>

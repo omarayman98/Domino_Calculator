@@ -12,19 +12,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 public class MainActivity extends AppCompatActivity {
     RadioGroup rg;
-  //  TextView draw_single , draw_teams ,draw_triple,five_single,five_double,five_triple;
     TextView txt;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setContentView(R.layout.activity_main);
         txt=findViewById(R.id.txt);
-
-
         txt.setPaintFlags(txt.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
     }
 

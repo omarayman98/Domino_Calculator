@@ -20,7 +20,7 @@ public class draw_triple_activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_draw_triple_activity);
+        setContentView(R.layout.activity_draw_triple);
         player1=new Player();
         WonValue_dp1=findViewById(R.id.WonValue_dp1);
         current_score_dp1=findViewById(R.id.current_score_dp1);
